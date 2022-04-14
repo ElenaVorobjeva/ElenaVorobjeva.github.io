@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="product.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&family=Open+Sans&display=swap"
+		rel="stylesheet">
+	<title>Product card</title>
+</head>
+
+<body>
+	<div class="product">
+		<div class="product_top-wrapper">
+			<div class="product__slider">
+				<div class="slider__images-wrapper">
+					<div class="slider__images"></div>
+					<div class="slider__controls">
+						<button class="slider__previous" tabindex="1">&lt;</button>
+						<button class="slider__next" tabindex="1">&gt;</button>
+					</div>
+				</div>
+			</div>
+			<h1 class="product__title"></h1>
+			<p class="product__description"></p>
+		</div>
+		<div class="product__bottom-wrapper">
+			<div class="product__prices">
+				<span class="product__old-price"></span>
+				<span class="product__price"></span>
+				<div class="product__discount"></div>
+			</div>
+			<div class="product__quantity">
+				<button class="quantity__minus"  tabindex="2">–</button>
+				<span></span>
+				<button class="quantity__plus" tabindex="2">+</button>
+			</div>
+			<span class="product__out-of-stock">Out of stock</span>
+			<button class="product__add-button" tabindex="3">Add to cart</button>
+		</div>
+	</div>
+	<script src="get-products.js"></script>
+	<script src="script.js"></script>
+	<script src="slider.js"></script>
+</body>
+
+</html>
