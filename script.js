@@ -25,7 +25,6 @@ document.querySelector('.quantity__plus').addEventListener('click', function () 
 	let spanText = quantitySpan.innerHTML;
 	let maxQuantity = quantitySpan.dataset.quantity;
 	if (spanText < maxQuantity) quantitySpan.innerHTML = +spanText + 1;
-	console.log(spanText);
 	if (spanText == maxQuantity - 1) {
 		document.querySelector('.quantity__plus').disabled = true;
 	}
